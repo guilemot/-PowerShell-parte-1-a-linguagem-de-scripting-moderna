@@ -24,7 +24,7 @@ gci -Recurse -File |
 Select $SelParam
 
 if($ExportType -eq "HTML"){
-	$Styles = Get-Content "C:\Users\guihf\Downloads\Alura_Project\Styles.css"
+	$Styles = Get-Content "C:\Styles.css"
 	$StyleTag = "<style> $Styles </style>"
 	$PageTitle = "Report of Downloaded Files"
 	$PageBody = "<h1> $PageTitle </h1>"
