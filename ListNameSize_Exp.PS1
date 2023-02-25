@@ -32,14 +32,14 @@ if($ExportType -eq "HTML"){
 	#Exportar result to a file
 	$Result |
 	ConvertTo-Html -Head $StyleTag -Title $PageTitle -Body $PageBody |
-	Out-File C:\Users\guihf\Downloads\Alura_Project\Report.html
+	Out-File C:\Report.html
 
 }elseif ($ExportType -eq "JSON"){
 	$Result |
 	ConvertTo-Json |
-	Out-File C:\Users\guihf\Downloads\Alura_Project\Report.json
+	Out-File C:\Report.json
 } elseif ($ExportType -eq "CSV"){
 	$Result |
 	ConvertTo-Csv |
-	Out-File C:\Users\guihf\Downloads\Alura_Project\Report.csv
+	Out-File C:\Report.csv
 }
